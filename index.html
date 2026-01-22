@@ -84,11 +84,41 @@
                 <button class="copy-btn" onclick="copyToClipboard('.\\manage-accounts.ps1')">Copy</button>
             </div>
 
-            <div class="success" style="margin-top: 20px;">
-                <strong>Quick Keyboard Shortcuts:</strong><br>
-                <span class="highlight">Press 1 → For Next Gen (nextgencode13)</span><br>
-                <span class="highlight">Press 2 → For Webpage (web-page-url)</span>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">🚀 Usage Methods</h2>
+
+            <h3>Method 1: Automatic (Recommended)</h3>
+            <div class="command-block">
+                <div class="command-text">cd "C:\path\to\any\repository"</div>
+                <button class="copy-btn" onclick="copyToClipboard('cd &quot;C:\\path\\to\\any\\repository&quot;')">Copy</button>
             </div>
+            <div class="command-block">
+                <div class="command-text">ghauto</div>
+                <button class="copy-btn" onclick="copyToClipboard('ghauto')">Copy</button>
+            </div>
+            <p class="highlight">Automatically detects and switches accounts</p>
+
+            <h3>Method 2: Manual Control</h3>
+            <div class="command-block">
+                <div class="command-text">ghswitch</div>
+                <button class="copy-btn" onclick="copyToClipboard('ghswitch')">Copy</button>
+            </div>
+            <p class="highlight">Interactive menu for account selection</p>
+
+            <h3>Method 3: Quick Commands</h3>
+            <div class="command-block">
+                <div class="command-text">Switch-ToNextGen</div>
+                <button class="copy-btn" onclick="copyToClipboard('Switch-ToNextGen')">Copy</button>
+            </div>
+            <p class="highlight">Instant switch to nextgencode13</p>
+
+            <div class="command-block">
+                <div class="command-text">Switch-ToWebPage</div>
+                <button class="copy-btn" onclick="copyToClipboard('Switch-ToWebPage')">Copy</button>
+            </div>
+            <p class="highlight">Instant switch to web-page-url</p>
         </section>
 
         <section class="section">
@@ -103,15 +133,7 @@
         </section>
 
         <section class="section">
-            <h2 class="section-title">⚡ Workflow Protocol</h2>
-            <h3>Before Repository Operations:</h3>
-            <div class="step-list">
-                <li>Execute <code class="highlight">ghswitch</code> command</li>
-                <li>Select appropriate account (1 or 2)</li>
-                <li>Verify status with <code class="highlight">gh auth status</code></li>
-                <li>Proceed with Git operations</li>
-            </div>
-
+            <h2 class="section-title">⚠️ Important Notes</h2>
             <div class="warning">
                 <strong>CRITICAL:</strong> Always switch accounts before pushing to repositories. Permission errors occur when using incorrect account credentials.
             </div>
